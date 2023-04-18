@@ -1,0 +1,81 @@
+.row {
+  width: 1140px; /* 1440 */
+  margin: auto;
+}
+
+.section {
+  display: flex;
+
+  align-items: center;
+}
+.header {
+  margin: 20px 0px;
+  justify-content: space-between;
+}
+.footer {
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 80px;
+}
+.main {
+  height: 80vh;
+}
+.logo {
+  width: 120px;
+  height: 23.34px;
+}
+
+.buttonSecondary {
+  color: #2a59fe;
+  border: solid 1px;
+  border-color: #2a59fe;
+  border-radius: 5px;
+  display: flex;
+  padding: 16px 20px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  transition: all 0.3s;
+}
+
+.buttonSecondary:hover {
+  border-color: hsl(227, 99%, 66%);
+  color: hsl(227, 99%, 66%);
+}
+.footerLink {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #02071c;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin: 20px 20px 20px 0px;
+}
+.footerLink:hover {
+  color: #383838;
+}
+
+.modal {
+  position: absolute;
+  box-sizing: border-box;
+  width: 680px;
+  height: 497px;
+  background: #ffffff;
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(5px);
+  width: 100%;
+  height: 100%;
+}
