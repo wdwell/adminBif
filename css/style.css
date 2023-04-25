@@ -1,11 +1,13 @@
 .row {
-  width: 1140px; /* 1440 */
+  width: 1440px; /* 1440 */
   margin: auto;
+  padding: 10px;
 }
-
+.reletive {
+  position: relative;
+}
 .section {
   display: flex;
-
   align-items: center;
 }
 .header {
@@ -17,9 +19,10 @@
   position: absolute;
   bottom: 0;
   height: 80px;
+  z-index: 1;
 }
 .main {
-  height: 80vh;
+  height: 85vh;
 }
 .logo {
   width: 120px;
@@ -123,6 +126,7 @@
   -webkit-backdrop-filter: blur(5px);
   width: 100%;
   height: 100%;
+  z-index: 1;
 }
 
 .h1txt {
@@ -191,6 +195,7 @@ textarea:focus ~ .bar:before {
 input[type="password"] {
   letter-spacing: 0.3em;
 }
+
 label {
   color: #c6c6c6;
   font-size: 16px;
@@ -322,6 +327,30 @@ label {
   position: relative;
   margin: 10px 0px;
 }
+
+.active {
+  background: #ffffff;
+  cursor: pointer;
+}
+
+.active > .change-icons > .change-icon:nth-of-type(2) {
+  display: none;
+}
+
+.active > .change-icons > .change-icon:nth-of-type(1) {
+  display: none;
+}
+
+.active > .change-icons > .change-icon:nth-of-type(2) {
+  display: block;
+  animation: fade-in 1s;
+}
+
+.active > .selected {
+  animation: fade-in 1s;
+  display: block;
+}
+
 .aside-menu a {
   color: #02071c;
 }
@@ -407,4 +436,134 @@ h1 {
 
 .width470 {
   width: 470px;
+}
+#file-upload {
+  opacity: 0;
+  padding: 10px 0px;
+}
+.custom-file-upload {
+  border-bottom: 1px solid #c6c6c6;
+  width: 100%;
+  padding: 10px 5px;
+  left: 0;
+  cursor: pointer;
+}
+.change::before {
+  position: absolute;
+  content: url("/images/change.svg");
+  right: 9px;
+  top: 9px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.width230 {
+  width: 230px;
+}
+.refresh::before {
+  position: absolute;
+  content: url("/images/refresh.svg");
+  right: 9px;
+  top: 9px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.edit::before {
+  position: absolute;
+  content: url("/images/edit.svg");
+  right: 9px;
+  top: 9px;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+.modalWindow {
+  position: absolute;
+  box-sizing: border-box;
+  width: 680px;
+  height: 242px;
+  background: #ffffff;
+  border: 1px solid #b7b7b7;
+  border-radius: 10px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.message {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #4a4d63;
+  padding-bottom: 30px;
+}
+.modalContent {
+  text-align: center;
+}
+.heading {
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 34px;
+  color: #02071c;
+  margin: 40px 90px 10px 90px;
+}
+.card {
+  width: 320px;
+  height: auto;
+  background: #ffffff;
+  border: 1px solid rgba(2, 7, 28, 0.7);
+  border-radius: 10px;
+  margin: 40px 40px 0 0;
+  padding: 30px;
+}
+
+.cardActive {
+  background: rgba(42, 89, 254, 0.7);
+  border: 1px solid #2a59fe;
+  border-radius: 10px;
+}
+.h3 {
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 34px;
+  text-align: center;
+  color: #02071c;
+}
+
+.h4 {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 39px;
+  color: #02071c;
+  margin-top: 45px;
+  margin-bottom: 65px;
+}
+.h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #02071c;
+  margin: 45px 0 10px 0;
+}
+.h6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  color: #02071c;
+  margin: 10px 0;
+}
+.cardTextActive {
+  color: #ffffff;
+}
+.width260 {
+  width: 260px;
+}
+.cardActive > button {
+  display: none;
+}
+.space-between {
+  justify-content: space-between;
+}
+.bold {
+  font-weight: 700;
 }
