@@ -328,6 +328,10 @@ label {
   margin: 10px 0px;
 }
 
+.aside-menu > button {
+  width: 100%;
+}
+
 .active {
   background: #ffffff;
   cursor: pointer;
