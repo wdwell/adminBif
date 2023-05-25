@@ -24,6 +24,9 @@
 .main {
   height: 85vh;
 }
+.main > h1 {
+  margin-bottom: 40px;
+}
 .logo {
   width: 120px;
   height: 23.34px;
@@ -154,7 +157,7 @@
   fill: #2e303b;
 }
 
-/* form */
+/* form *
 .group {
   position: relative;
   margin: 20px 0;
@@ -222,7 +225,7 @@ label {
   transition: 300ms ease all;
   left: 0%;
 }
-/* form end */
+* form end */
 .flex {
   display: flex;
 }
@@ -452,35 +455,32 @@ h1 {
   left: 0;
   cursor: pointer;
 }
+.width230 {
+  width: 230px;
+}
 .change::before {
   position: absolute;
   content: url("/images/change.svg");
-  right: 9px;
-  top: 9px;
+  right: 7px;
+  top: 33px;
   width: 32px;
   height: 32px;
-  cursor: pointer;
-}
-.width230 {
-  width: 230px;
 }
 .refresh::before {
   position: absolute;
   content: url("/images/refresh.svg");
-  right: 9px;
-  top: 9px;
+  right: 3px;
+  top: 35px;
   width: 32px;
   height: 32px;
-  cursor: pointer;
 }
 .edit::before {
   position: absolute;
   content: url("/images/edit.svg");
-  right: 9px;
-  top: 9px;
+  right: 3px;
+  top: 35px;
   width: 32px;
   height: 32px;
-  cursor: pointer;
 }
 .modalWindow {
   position: absolute;
@@ -570,4 +570,48 @@ h1 {
 }
 .bold {
   font-weight: 700;
+}
+.custom_Imput {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.custom_Imput > label {
+  color: rgba(2, 7, 28, 0.7);
+  margin-bottom: 5px;
+  cursor: auto;
+}
+.custom_Imput__item {
+  border: 1px solid #2a59fe;
+  border-radius: 5px;
+  transition: all 0.3s;
+  align-items: center;
+  padding: 16px 16px 16px 8px;
+}
+.custom_Imput__item:focus {
+  outline: 2px solid #2a59fe;
+}
+.custom_Imput__item::placeholder {
+  color: #b7b7b7;
+}
+.custom_Imput__solid {
+  border: none;
+  border-bottom: 1px solid #2a59fe;
+  border-radius: 0;
+}
+.custom_Imput__solid:focus {
+  outline: none;
+  box-shadow: 0px 1px 0px 0px #2a59fe;
+}
+.custom_Imput__file {
+  display: none; /* Скрываем оригинальный input[type="file"] */
+}
+
+.custom_Imput__fileText {
+  color: #b7b7b7;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }

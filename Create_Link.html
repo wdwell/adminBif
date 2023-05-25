@@ -158,50 +158,66 @@
         <div class="main">
           <h1>Создать ссылку</h1>
           <form class="width470">
-            <div class="group refresh">
-              <input type="text" required="required" /><span
-                class="highlight"
-              ></span
-              ><span class="bar"></span>
-              <label>Адрес ссылки*</label>
+            <div class="custom_Imput refresh">
+              <label>Адрес ссылки *</label>
+              <input
+                class="custom_Imput__item"
+                type="text"
+                required="required"
+                placeholder="Введите URL"
+              />
             </div>
-            <div class="group">
-              <input type="password" required="required" /><span
-                class="highlight"
-              ></span
-              ><span class="bar"></span>
-              <label>Заголовок*</label>
+            <div class="custom_Imput">
+              <label>Заголовок *</label>
+              <input
+                class="custom_Imput__item"
+                type="text"
+                required="required"
+                placeholder="Введите название"
+              />
             </div>
-            <div class="group">
-              <input type="text" required="required" /><span
-                class="highlight"
-              ></span
-              ><span class="bar"></span>
+            <div class="custom_Imput">
               <label>Описание</label>
+              <input
+                class="custom_Imput__item"
+                type="text"
+                required="required"
+                placeholder="Введите описание"
+              />
             </div>
-            <div class="group">
-              <input type="text" required="required" /><span
-                class="highlight"
-              ></span
-              ><span class="bar"></span>
+            <div class="custom_Imput">
               <label>Добавить теги</label>
+              <input
+                class="custom_Imput__item"
+                type="text"
+                required="required"
+                placeholder="Введите описание"
+              />
             </div>
-            <div class="group change">
-              <input id="file-upload" type="file" required="required" /><span
-                class="highlight"
-              ></span>
-              <label for="file-upload" class="custom-file-upload"
-                >Прикрепить файл</label
-              >
+            <div class="custom_Imput change">
+              <label for="fileInput">Прикрепить файл</label>
+              <div class="custom_Imput__item">
+                <input
+                  class="custom_Imput__file"
+                  type="file"
+                  id="fileInput"
+                  required="required"
+                  placeholder="Выберите файл"
+                />
+                <span class="custom_Imput__fileText">Выберите файл</span>
+              </div>
             </div>
-            <div class="group edit">
-              <input type="text" required="required" /><span
-                class="highlight"
-              ></span
-              ><span class="bar"></span>
+
+            <div class="custom_Imput edit">
               <label>Промоматериалы</label>
+              <input
+                class="custom_Imput__item custom_Imput__solid"
+                type="text"
+                required="required"
+                placeholder=""
+              />
             </div>
-            <div class="group center">
+            <div class="center">
               <button class="buttonPrimary width230" type="button" disabled>
                 Далее
               </button>
