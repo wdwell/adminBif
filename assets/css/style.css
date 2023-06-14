@@ -1,0 +1,158 @@
+.row {
+  width: 90rem; /* 1440 */
+  margin: auto;
+  font-family: "Inter";
+  font-style: normal;
+}
+/*begin header*/
+.header {
+  align-items: center;
+  background: #f4f6fa;
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  min-height: 5rem;
+  padding: 0 2.5rem;
+}
+/*end header*/
+
+/*begin footer*/
+.footer {
+  justify-content: flex-start;
+  margin: 1.25rem 2.5rem;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  left: 0;
+}
+.footer > a {
+  margin-right: 1.25rem;
+  color: #02071c;
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 0.938rem;
+  transition: all 0.3s;
+}
+.footer > a:hover {
+  color: #234de0;
+}
+/*end footer*/
+
+/*begin button*/
+.button {
+  color: #2a59fe;
+  border: solid 0.063rem #2a59fe;
+  border-radius: 0.313rem;
+  display: flex;
+  padding: 1rem 1.25rem;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  line-height: 1.188rem;
+  transition: all 0.3s;
+  justify-content: center;
+  min-width: 14.375rem;
+}
+.buttonSecondary {
+  background: none;
+}
+.buttonSecondary:hover {
+  background: #2a59fe;
+  color: #fff;
+}
+.buttonSecondary:active {
+  background: rgba(42, 89, 254, 0.7);
+}
+.buttonPrimary {
+  background: #2a59fe;
+  color: #fff;
+}
+.buttonPrimary:hover {
+  background: hsl(227, 99%, 66%);
+}
+.buttonPrimary:active {
+  background: rgba(42, 89, 254, 0.7);
+}
+.button:disabled {
+  color: #b7b7b7;
+  background: #f4f6fa;
+  border-radius: 5px;
+  border: solid 0.063rem #f4f6fa;
+  cursor: not-allowed;
+}
+/*end button*/
+
+.container {
+  margin: 3.125rem;
+}
+
+/*begin 1 страница с авторизацией*/
+.mainContent {
+  margin-left: auto;
+  margin-right: auto;
+  width: 42.5rem;
+}
+.mainContent > h1 {
+  font-size: 1.75rem;
+  line-height: 2.188rem;
+}
+.mainContent > p {
+  margin-top: 3.75rem;
+  color: #02071c;
+  font-size: 1rem;
+  opacity: 0.5;
+}
+a.lcLink {
+  color: #2a59fe;
+  -webkit-text-decoration: underline;
+  text-decoration: underline;
+  transition: all 0.3s;
+}
+a.lcLink:hover {
+  opacity: 0.7;
+}
+.autentificationButton {
+  display: flex;
+  margin-top: 2.5rem;
+}
+.autentificationButton > button {
+  margin-right: 3.125rem;
+}
+.modalAutentification {
+  display: none;
+  position: absolute;
+  box-sizing: border-box;
+  width: 42.5rem;
+  height: 31.063rem;
+  background: #ffffff;
+  border: 0.063rem solid #b7b7b7;
+  border-radius: 0.625rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.modalAutentificationBlur {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0.5);
+  -webkit-backdrop-filter: blur(0.313rem);
+  width: 100%;
+  height: 100%;
+}
+.modalAutentificationExit {
+  position: absolute;
+  right: 0px;
+  padding: 20px;
+}
+.modalAutentificationExit > img {
+  cursor: pointer;
+  transition: all 0.3s;
+  filter: opacity(0.5);
+}
+.modalAutentificationExit > img:hover {
+  filter: opacity(1);
+}
+
+/*end 1 страница с авторизацией*/
